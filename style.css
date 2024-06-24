@@ -1,0 +1,260 @@
+html {
+    background: rgb(145,39,73);
+    background: linear-gradient(135deg, rgba(145,39,73,1) 0%, rgba(19,26,77,1) 30%);
+    
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+/*  Header  */
+
+header {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+}
+nav {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background: rgb(145,39,73);
+    background: linear-gradient(320deg, rgba(145,39,73,1) 0%, rgba(19,26,77,1) 80%);
+    color: #fff;
+    padding-top: 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-left: black solid 1px;
+}
+nav.active {
+    right: 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 40px 0;
+    text-align: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+.overlay.active {
+    display: block;
+}
+
+/* Menu hover animation */
+.menu__link {
+    line-height: 2;
+    position: relative;
+  }
+  
+  .menu__link::before {
+    content: '';
+    width: 0;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -.25rem;
+    left: 50%;
+    transition: width .4s, left .4s;
+  }
+  
+  .menu__link:hover::before {
+    width: 100%;
+    left: 0;
+  }
+
+
+
+
+
+/* footer */
+/* Footer alap stílusok */
+footer {
+    background-color: #33333353;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    border-top: solid 1px black;
+}
+
+
+.inner {
+    gap: 20px;
+}
+
+
+.footer-left, .footer-right {
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* social icons */
+.social-card {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgb(167, 167, 167);
+    padding: 20px 25px;
+    border-radius: 14px;
+  }
+  .Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    z-index: 2;
+  }
+  
+  .BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 0px;
+  }
+  .github .BG {
+    background: #181818;
+  }
+  .linkdin .BG {
+    background: #0077b5;
+  }
+  .whatsapp .BG {
+    background: #075e54;
+  }
+  .discord .BG {
+    background: #7289da;
+  }
+  .Btn:hover .BG {
+    transform: scale(1.5);
+    /* transform-origin: bottom; */
+    font-size: 20px;
+    color: white;
+  }
+  
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
+
+
+
+
+/* Asztali nézet */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+    nav {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+        padding-top: 0;
+        transition: none;
+        border: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; /* Menüpontok jobbra igazítása */
+        gap: 20px; /* Térköz a menüpontok között */
+    }
+    nav ul li {
+        margin-left: 200px;
+        margin: 0;
+    }
+    nav ul li a {
+        padding: 10px 15px;
+    }
+    .overlay {
+        display: none;
+    }
+}
