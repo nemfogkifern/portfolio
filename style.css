@@ -1,8 +1,8 @@
 html {
     background: rgb(145,39,73);
-    background: linear-gradient(135deg, rgba(145,39,73,1) 0%, rgba(19,26,77,1) 30%);
-    
-    height: 100vh;
+    background: linear-gradient(145deg, #ea5358 0%, rgba(19,26,77,1) 30%);
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -13,7 +13,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
 
+    display: flex;
+    flex-direction: column;
 }
 
 /*  Header  */
@@ -40,8 +44,8 @@ nav {
     top: 0;
     height: 100%;
     width: 250px;
-    background: rgb(145,39,73);
-    background: linear-gradient(320deg, rgba(145,39,73,1) 0%, rgba(19,26,77,1) 80%);
+    background: #ea5358;
+    background: linear-gradient(320deg, #ea5358 0%, rgba(19,26,77,1) 80%);
     color: #fff;
     padding-top: 30px;
     transition: right 0.3s ease;
@@ -52,7 +56,7 @@ nav.active {
     right: 0;
 }
 #active {
-    color: rgb(145,39,73);
+    color: #ea5358;
     font-weight: 800;
 }
 nav ul {
@@ -103,11 +107,57 @@ nav ul li a {
     left: 50%;
     transition: width .4s, left .4s;
   }
+
+  #active::before {
+    background-color: #ea5358;
+  }
   
   .menu__link:hover::before {
     width: 100%;
     left: 0;
   }
+
+/* Main */
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin: 30px;
+}
+
+/* Card */
+.card {
+    width: 90%;
+    height: 254px;
+    background-image: linear-gradient(163deg, #ea5358 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+  }
+  
+  .card2 {
+    width: 100%;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: all .2s;
+    color: white;
+    text-align: center;
+  }
+  
+  .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 30px 1px #ea53584a;
+  }
+   
+
 
 
 
@@ -117,11 +167,12 @@ nav ul li a {
 
 footer {
     background-color: #33333353;
+    background: linear-gradient(-30deg, #ea5358 0%, rgba(19,26,77,1) 20%);
     color: #fff;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
 
     display: flex;
     flex-direction: column;
@@ -134,15 +185,10 @@ footer {
 }
 
 
-.inner {
-    gap: 20px;
-}
 
 
-.footer-left, .footer-right {
-    width: 100%;
-    justify-content: center;
-}
+
+
 
 .footer-bottom {
     margin-top: 20px;
@@ -153,12 +199,12 @@ footer {
 /* social icons */
 .social-card {
     height: fit-content;
-    width: fit-content;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    background: rgba(145, 39, 73, 0.607);
+    gap: 10%;
+    background: #ea53589e;
     padding: 20px 25px;
     border-radius: 14px;
     border: solid 1px black;
@@ -188,7 +234,6 @@ footer {
     letter-spacing: 0.8px;
     border-radius: 10px;
     transition: all 0.3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
     z-index: 2;
   }
   
@@ -217,7 +262,6 @@ footer {
   }
   .Btn:hover .BG {
     transform: scale(1.5);
-    /* transform-origin: bottom; */
     font-size: 20px;
     color: white;
   }
@@ -232,7 +276,7 @@ footer {
 
 
 
-/* Asztali nézet */
+/* Responsivity */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -249,8 +293,8 @@ footer {
     nav ul {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; /* Menüpontok jobbra igazítása */
-        gap: 20px; /* Térköz a menüpontok között */
+        justify-content: flex-end; 
+        gap: 20px; 
     }
     nav ul li {
         margin-left: 200px;
@@ -261,5 +305,11 @@ footer {
     }
     .overlay {
         display: none;
+    }
+
+
+    .social-card {
+        width: fit-content;
+        gap: 20px
     }
 }
