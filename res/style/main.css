@@ -35,4 +35,66 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'title', sans-serif;
+
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
+/* ¨Header */
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #292f36;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Main */
+main    {
+    margin-top: 75px;
+    min-height: 900 px;
+    max-width: 90%;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: 1px solid #000000;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #94979b;
+    height: 120px;
 }
