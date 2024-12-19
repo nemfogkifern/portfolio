@@ -1,0 +1,38 @@
+
+
+@font-face {
+    font-family: 'text';
+    src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'title';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+img {
+    max-width: 100%;
+}
+html, body {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: 'text', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'title', sans-serif;
+}
