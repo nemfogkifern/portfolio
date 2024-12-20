@@ -40,7 +40,8 @@ h1, h2, h3, h4 {
 
 
 body {
-    background-color: #ffffff;
+
+    background-color: #EEE5E9;
 }
 
 /* ¨Header */
@@ -51,50 +52,213 @@ header {
     left: 0;
     top: 0;
     background-color: #292f36;
-    color: #ffffff;
-    padding: 10px;
+    color: #EEE5E9;
+    padding: 10px;    
 }
+
+header h1 {
+    font-size: 40px;
+}
+
+/* NAV */
+
+nav{
+
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    border-top: solid white 1px;
+    margin-top: 15px;
+
+}
+
+.menu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: white;
+    border-radius: 20px;
+
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    padding: 0 8px;
+
+}
+
+.menu-toggle:hover {
+    color: #4b4b4b;
+    background-color: #c0c0c0;
+    transition: all 0.4s ease;
+    transform:scale(1.2);
+}
+
+
+.menu.active {
+    display: block;
+    transition: all 0.4s ease;
+}
+
+
+
+nav ul li a:hover {
+    background-color: #EEE5E9;
+    color: #000000;
+    transform: scale(1.02);
+    transform:translateX(5px);
+    transform: translateY(-3px);
+    transition: all 0.4s ease;
+}
+ 
 
 /* Main */
 main    {
     margin-top: 75px;
-    min-height: 900 px;
-    max-width: 90%;
+    margin-bottom: 20px;
+    min-height: 800px;
+    max-width: 100%;
     justify-self: center;
+
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-around;
+    align-items: center;
+
     text-align: center;
 }
 
-.section {
-    width: 100%;
+.card {
+    border: 1px solid #000000;
+    background-color: #EFC88B;
+}
+
+.section-small {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.section-medium {
+    width: 90%;
     padding: 10px;
     margin-top: 10px;
 
     border: 1px solid #000000;
-    background-color: #ffffff;
+    background-color: #EFC88B;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
+.section-large {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
 
+    border: 1px solid #000000;
+    background-color: #EFC88B;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 
 /* Footer */
 
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+
     width: 100%;
-    background-color: #94979b;
+    background-color: #7C7C7C;
     height: 120px;
 }
+
+
+@media screen and (min-width: 768px) {
+    
+
+
+
+    main    {
+        margin-top: 75px;
+        margin-bottom: 20px;
+        min-height: 800px;
+        max-width: 100%;
+        justify-self: center;
+    
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+    
+        text-align: center;
+    }
+
+    .section-small {
+        width: 30%;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+    
+    
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    .section-medium {
+        width: 45%;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+
+    
+        border: 1px solid #000000;
+        background-color: #EFC88B;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .section-large {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+    
+        border: 1px solid #000000;
+        background-color: #EFC88B;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
