@@ -10,83 +10,133 @@
 </head>
 
 <body>
+            <header>
+                <h1>Hello World</h1>
 
-    <header>
-        <h1>Hello World</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </header>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="javascript:void(0)" class="menu-toggle" onclick="toggleMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </header>
+            <main class="container">
 
-    <main class="container">
-        <div class="section-small">
-            <h1>Applicaiton</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est repudiandae perspiciatis tempora accusamus magni,
-                doloribus vitae praesentium ipsam earum? Itaquenostraliasdolorum dolor quos laborum odio, rerum natus officiis?
-            </p>
-        </div>
-        
-        <div class="section-small card">
-            <h2>Section one</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam sit incidunt at dolor adipisci ex?
-                Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint harum exercitationem, voluptatem quae?
-                Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel doloribus dignissimos ipsam similique?
-            </p>
-        </div>
+                <div class="section-large">
+                    <p id="welcome"></p>
+                </div>
 
-        <div class="section-small card">
-            <h2>Section two</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam sit incidunt at dolor adipisci ex?
-                Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint harum exercitationem, voluptatem quae?
-                Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel doloribus dignissimos ipsam similique?
-            </p>
-        </div>
+                <div class="title">
+                    <h1>About me</h1>
+                </div>
 
-        <div class="section-medium card">
-            <h2>Section medium</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam sit incidunt at dolor adipisci ex?
-                Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint harum exercitationem, voluptatem quae?
-                Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel doloribus dignissimos ipsam similique?
-            </p>
-        </div>
-        <div class="section-medium card">
-            <h2>Section medium</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam sit incidunt at dolor adipisci ex?
-                Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint harum exercitationem, voluptatem quae?
-                Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel doloribus dignissimos ipsam similique?
-            </p>
-        </div>
+                <div class="section-small">
+                    <h1>Applicaiton</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est repudiandae perspiciatis tempora
+                        accusamus magni,
+                        doloribus vitae praesentium ipsam earum? Itaquenostraliasdolorum dolor quos laborum odio, rerum
+                        natus officiis?
+                    </p>
+                </div>
 
-        <div class="section-large">
-            <h2>Section Large</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam sit incidunt at dolor adipisci ex?
-                Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint harum exercitationem, voluptatem quae?
-                Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel doloribus dignissimos ipsam similique?
-            </p>
-        </div>
 
-        
-    </main>
+                <div class="section-small card">
+                    <h2>Section one</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio
+                        accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam
+                        sit incidunt at dolor adipisci ex?
+                        Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit
+                        sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint
+                        harum exercitationem, voluptatem quae?
+                        Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor
+                        vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel
+                        doloribus dignissimos ipsam similique?
+                    </p>
+                </div>
 
+                <div class="section-small card">
+                    <h2>Section two</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio
+                        accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam
+                        sit incidunt at dolor adipisci ex?
+                        Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit
+                        sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint
+                        harum exercitationem, voluptatem quae?
+                        Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor
+                        vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel
+                        doloribus dignissimos ipsam similique?
+                    </p>
+                </div>
+
+                <div class="section-medium card">
+                    <h2>Section medium</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio
+                        accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam
+                        sit incidunt at dolor adipisci ex?
+                        Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit
+                        sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint
+                        harum exercitationem, voluptatem quae?
+                        Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor
+                        vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel
+                        doloribus dignissimos ipsam similique?
+                    </p>
+                </div>
+                <div class="section-medium card">
+                    <h2>Section medium</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio
+                        accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam
+                        sit incidunt at dolor adipisci ex?
+                        Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit
+                        sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint
+                        harum exercitationem, voluptatem quae?
+                        Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor
+                        vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel
+                        doloribus dignissimos ipsam similique?
+                    </p>
+                </div>
+
+                <div class="section-large">
+                    <h2>Section Large</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem cum rem odio
+                        accusantium assumenda vero, laudantium reiciendis quis inventore, deleniti nam. Sunt, numquam
+                        sit incidunt at dolor adipisci ex?
+                        Odit nemo repellendus, non, reiciendis sequi facere, in quibusdam incidunt provident velit
+                        sapiente eos ipsam illum perspiciatis quasi illo quae! Et, nesciunt. Qui ipsa quibusdam sint
+                        harum exercitationem, voluptatem quae?
+                        Mollitia, corporis. Nihil quidem quam hic dolorum, eius distinctio dolores tempora enim, dolor
+                        vero eligendi? Voluptas laboriosam nobis voluptatibus ut at, culpa natus, neque ducimus vel
+                        doloribus dignissimos ipsam similique?
+                    </p>
+                </div>
+
+                <button class="back-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+            </main>
 
     <footer>
+        <div class="footer-content">
+            <p><i class="fa-regular fa-copyright"></i> 2024 Gyurina Bercel. All rights reserved.</p>
+            <p><i class="fa-solid fa-envelope footer-icon"></i> gyurinabercel@gmail.com</p>
+            <p><i class="fa-solid fa-phone footer-icon"></i> +36 50 103 6922</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bercel-gyurina-15758032a" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nemfogkifern" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
 
-
+        </div>
     </footer>
-    
+
     <script src="src/main.js"></script>
 </body>
 

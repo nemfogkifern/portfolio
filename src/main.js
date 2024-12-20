@@ -26,3 +26,26 @@ document.addEventListener('click', function (event) {
 //     menuToggle.classList.remove('active');
     
 // })
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+
+
+
+var i = 0;
+var txt = 'Welcome to my portfolio website!';
+var speed = 80;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("welcome").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
