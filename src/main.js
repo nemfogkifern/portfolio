@@ -1,4 +1,6 @@
 
+
+// Toggles the menu on and off
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
@@ -7,7 +9,7 @@ function toggleMenu() {
     menuToggle.classList.toggle('active');
 }
 
-
+// Closes menu when clicking outside of it
 document.addEventListener('click', function (event) {
     const menu = document.querySelector('.menu');
     const menuToggle = document.querySelector('.menu-toggle');
@@ -18,6 +20,9 @@ document.addEventListener('click', function (event) {
     }
 });
 
+
+// Closes menu when scrolling
+
 // document.addEventListener("scroll", function (event) {
 //     const menu = document.querySelector('.menu');
 //     const menuToggle = document.querySelector('.menu-toggle');
@@ -26,6 +31,8 @@ document.addEventListener('click', function (event) {
 //     menuToggle.classList.remove('active');
     
 // })
+
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -35,7 +42,7 @@ function scrollToTop() {
 
 
 
-
+// Typewriter effect
 var i = 0;
 var txt = 'Welcome to my portfolio website!';
 var speed = 80;
