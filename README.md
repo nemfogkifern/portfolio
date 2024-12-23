@@ -23,6 +23,6 @@ This portfolio was created as a way to practice and showcase my web development 
 1. Clone the repository or download the files.
 2. Open the `index.html` file in any web browser to view the website.
 
-3. The site is deployed at the following link:
+3. The site is deployed at the following link: https://nemfogkifern.github.io/portfolio/
 
 
