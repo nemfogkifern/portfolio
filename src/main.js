@@ -47,12 +47,55 @@ var i = 0;
 var txt = 'Welcome to my portfolio website!';
 var speed = 80;
 
+
 function typeWriter() {
   if (i < txt.length) {
+    
     document.getElementById("welcome").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
 
-typeWriter()
+
+
+
+
+// Fade in effect
+document.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < windowHeight) {
+            el.classList.add('visible');
+        }
+    });
+});
+
+// Slide in effect
+document.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.slide-in');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < windowHeight) {
+            el.classList.add('visible');
+        }
+    });
+});
+
+// Slide in effect right
+document.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.slide-in-r');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < windowHeight) {
+            el.classList.add('visible');
+        }
+    });
+});

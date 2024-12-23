@@ -53,7 +53,8 @@ header {
     top: 0;
     background-color: #292f36;
     color: #EEE5E9;
-    padding: 10px;    
+    padding: 10px;
+    z-index: 1000;
 
 }
 
@@ -68,6 +69,13 @@ nav{
     width: 100%;
 }
 
+nav ul li a#active {
+    background-color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+nav ul li a#active:hover {
+    color: #EEE5E9;
+}
 
 
 .menu {
@@ -171,7 +179,7 @@ main    {
 .section-small {
     width: 90%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 
 
 
@@ -184,7 +192,7 @@ main    {
 .section-medium {
     width: 90%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 
     display: flex;
     flex-direction: column;
@@ -194,7 +202,7 @@ main    {
 .section-large {
     width: 90%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 
 
 
@@ -221,9 +229,10 @@ main    {
     transform: scale(1.2);
     background-color: #eee5e9;
     border: 1px solid #000000;
+    cursor: pointer;
 }
 
-.title {
+.title-bg {
     font-size: 40px;
     width: 100%;
     text-align: center;
@@ -233,9 +242,56 @@ main    {
     border: #000000 solid 3px;
 }
 
-#welcome {
+.title {
     font-size: 40px;
+    width: 100%;
     text-align: center;
+}
+
+#welcome {
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    margin: 20px;
+}
+
+#welcome-section {
+    padding-top: 10px;
+    width: 90%;
+
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slide-in.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-in-r {
+    transform: translateX(+100%);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slide-in-r.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
@@ -333,8 +389,22 @@ footer{
         width: fit-content;
         
     }
+    
 
+    #welcome {
+        font-size: 30px;
+        height: fit-content;
+        margin: 20px;
+
+    }
 }
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
     .section-small {
@@ -353,5 +423,14 @@ footer{
 
     .menu li {
         margin-right: 30px;
+    }
+
+
+
+
+
+    #welcome {
+        font-size: 40px;
+        margin: 0;
     }
 }
